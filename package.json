@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-serper",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Serper MCP — wraps the Serper Google Search API (serper.dev)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-serper": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "serper"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-serper.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/serper",
   "pipeworx": {
-    "sourceHash": "v1-c816404c288c3140a017d0ed291907a1b0468ebd6b240600f69c9d24c8d22e90",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "serper",
+    "gatewaySlug": "serper",
+    "sourceHash": "v1-29da6d954ec278a8b81e45bd1be576074ee770835e60bb50f3ab654b7cc7eb6a",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
