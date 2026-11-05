@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-serper",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Serper MCP — wraps the Serper Google Search API (serper.dev)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "serper",
     "gatewaySlug": "serper",
-    "sourceHash": "v1-29da6d954ec278a8b81e45bd1be576074ee770835e60bb50f3ab654b7cc7eb6a",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-82941a48afad7f944305e3bf756cf045a8df68c26f527d652536aec0443d9ee7",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
